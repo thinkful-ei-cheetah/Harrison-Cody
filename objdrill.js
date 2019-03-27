@@ -15,8 +15,11 @@
 //     console.log(i+':'+obj[i]);
 // }
 
-let a={name: 'Peter',jobTitle:'Plumber'};
-let b={name: 'John',jobTitle:'Construction Worker'};
-let c={name: 'Bob',jobTitle:'Builder'};
-let d=[a,b,c];
-d.forEach(x=>console.log(x));
+// let obj2 = { meal : ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'] } 
+// console.log(obj2.meal[3]);
+
+// let a={name:'Peter',jobTitle:'Plumber'};
+// let b={name:'John',jobTitle:'Construction Worker'};
+// let c={name:'Bob',jobTitle:'Builder'};
+// let d=[a,b,c];
+// d.forEach(x=>console.log(x));
