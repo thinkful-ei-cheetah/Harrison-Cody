@@ -18,19 +18,19 @@
 // let obj2 = { meal : ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper'] } 
 // console.log(obj2.meal[3]);
 
-let a={name:'Peter',jobTitle:'Plumber'};
-let b={name:'John',jobTitle:'Construction Worker'};
-let c={name:'Bob',jobTitle:'Builder'};
-let d=[a,b,c];
+// let a={name:'Peter',jobTitle:'Plumber'};
+// let b={name:'John',jobTitle:'Construction Worker'};
+// let c={name:'Bob',jobTitle:'Builder'};
+// let d=[a,b,c];
 // d.forEach(x=>console.log(x));
 
-a.boss = "Bob";
-b.boss = "Bob";
+// a.boss = "Bob";
+// b.boss = "Bob";
 
-d.forEach(job =>{
-    if(job.hasOwnProperty('boss')){
-        console.log(`${job.jobTitle} ${job.name} reports to ${job.boss}.`);
-    }else{
-        console.log(`${job.jobTitle} ${job.name} doesn't report to anybody.`);
-    }
-})
+// d.forEach(job =>{
+//     if(job.hasOwnProperty('boss')){
+//         console.log(`${job.jobTitle} ${job.name} reports to ${job.boss}.`);
+//     }else{
+//         console.log(`${job.jobTitle} ${job.name} doesn't report to anybody.`);
+//     }
+// })
