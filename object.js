@@ -1,13 +1,13 @@
-// function createMyObject() {
-//     return {
-//     foo:bar,
-//     answerToUniver:42,
-//     'olly olly':'oxen free',
-//     sayHello : function(){
-//       return 'hello'
-//      }
-//     }
-//   }
+function createMyObject() {
+    return {
+    foo:bar,
+    answerToUniver:42,
+    'olly olly':'oxen free',
+    sayHello : function(){
+      return 'hello'
+     }
+    }
+  }
 function updateObject(obj) {
     obj.foo = 'foo';
     obj.bar = 'bar';
@@ -28,4 +28,9 @@ function updateObject(obj) {
 }
     return person;
 
+  }
+function keyDeleter(obj) {
+    delete obj.foo;
+    delete obj.bar;
+    return obj;
   }
