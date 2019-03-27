@@ -50,3 +50,43 @@
 // }
 // const test='craft block argon meter bells brown croon droop';
 // console.log(decodeWords(test));
+let gandalf = new createCharacter('Gandalf','Gandalf the White gandalf', 'Wizard','Middle Earth',10 ,6);
+let bilbo = new createCharacter( 'Bilbo Baggins','bilbo','Hobbit','The Shire',2,1);
+let frodo = new createCharacter('Frodo Baggins','frodo','Hobbit','The Shire',3,2);
+let aragorn = new createCharacter('Aragorn son of Arathorn','aragorn','Man','Dunnedain',6,8); 
+let legolas= new createCharacter('Legolas','legolas','Elf','Woodland Realm',8,5);
+let character = [gandalf,bilbo,frodo,aragorn,legolas];
+function createCharacter(name,nickname,race,origin,attack,defence,){
+    this.name= name;
+    this.nickname= nickname;
+    this.origin= origin;
+    this.attack=attack;
+    this.defence=defence;
+    this.race = race;
+    this.describe = function(){
+        return `${name} is a ${race} from ${origin}`;
+    }
+    this.evaluateFight = function(character){
+        function dmg(a,b){ 
+            if (a<b){ return 0; } 
+            return a-b; } 
+            return `Your opponent takes ${dmg (attack,character.defence)} damage and you receive ${dmg(character.attack,defence)} damage;`
+                
+            }
+        
+    }
+
+// character.find(x => x.nickname ==='bilbo' )
+let finder = character.find(x => x.nickname ==='bilbo' );
+// console.log(finder.describe());
+let hobbits = character.filter(x => x.race ==='Hobbit');
+let strongGuys = character.filter( x => x.attack >= 5 ? x : undefined);
+// console.log(strongGuys)
+function addWeapon(weapon,name){
+    name.weapon = weapon;
+    name.describe = function(){
+        return `${name.name} is a ${name.race} from ${name.origin} uses ${weapon}`;
+    }
+}
+
+
