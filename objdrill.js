@@ -34,3 +34,19 @@
 //         console.log(`${job.jobTitle} ${job.name} doesn't report to anybody.`);
 //     }
 // })
+
+// let decode ={
+//     a:2,b:3,c:4,d:5
+// };
+// function decoder(word){
+//     if (decode.hasOwnProperty(word[0])){return word.charAt(decode[word[0]]-1);}
+//     else{return ' ';}
+// }
+// function decodeWords(words){
+//     wordlist=words.split(' ');
+//     out=[];
+//     wordlist.forEach(x=>out+=decoder(x));
+//     return out;
+// }
+// const test='craft block argon meter bells brown croon droop';
+// console.log(decodeWords(test));
